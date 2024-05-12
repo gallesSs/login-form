@@ -1,0 +1,125 @@
+*,*::after,*::before {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./bgImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 1024px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
+
+.form-wrapper {
+    width: 873px;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+.form-title {
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    width: 733px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    -webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+-ms-transition: all 0.25s linear;
+-o-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+#email, #username {
+    color: #FFF;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: #E2E2E2;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 1.2px;
+opacity: 80%;
+}
+
+input:focus {
+    box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+-webkit-box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+-moz-box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+}
+
+button {
+    width: 125px;
+    height: 45px;
+    align-self: center;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid rgba(0,178,255,0.75);
+    color: #FFF;
+    font-size: 16px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
+
+button:hover {
+    box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+    -webkit-box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+    -moz-box-shadow: 1px 1px 36px 0px rgba(0,178,255,0.75);
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+button:active {
+    box-shadow: 1px 1px 36px 0px rgba(0,0,255,0.95);
+    -webkit-box-shadow: 1px 1px 36px 0px rgba(0,0,255,0.95);
+    -moz-box-shadow: 1px 1px 36px 0px rgba(0,0,255,0.95);
+    border: rgba(0,0,255,0.95);
+}
